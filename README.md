@@ -4,10 +4,9 @@
 
 ## Related Projects
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
+  - https://github.com/teamtitos/front-end-capstone
+  - https://github.com/Team-Torchy/front-end-capstone
+  - https://github.com/hackreactor/hratx51-front-end-capstone
 
 ## Table of Contents
 
