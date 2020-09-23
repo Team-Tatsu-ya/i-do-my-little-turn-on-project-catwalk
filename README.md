@@ -16,7 +16,11 @@
 
 ## Usage
 
-> Some usage instructions
+> Run npm install --save-dev jest in your terminal to install jest's testing framework.
+> Run npm i --save-dev enzyme enzyme-adapter-react-14 in your terminal (replacing 14 with your version of React) to install enzyme's testing framework.
+> Run npm i puppeteer in your terminal to install puppeteer.
+> Run npm install mocha in your terminal to install mocha.
+> Run npm install chai in your terminal to install chai.
 
 ## Requirements
 
