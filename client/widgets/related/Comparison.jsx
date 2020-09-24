@@ -9,11 +9,11 @@ class Comparison extends React.Component {
     }
   }
 
-  // methods
+  // TODO: methods for pulling in characteristics data for both products
 
   render () {
     return (
-        {/* pop up window with title and table */}
+      {/* TODO: render pop up window with title and table */}
     )
   }
 }

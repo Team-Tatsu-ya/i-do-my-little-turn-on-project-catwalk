@@ -9,12 +9,12 @@ class RelatedList extends React.Component {
     }
   }
 
-  // methods
+  // TODO: methods that pull in data from related products
 
   render () {
     return (
       <div>
-        {/* put carousel here with product card component */}
+        {/* TODO: put carousel here with product card component */}
       </div>
     )
   }

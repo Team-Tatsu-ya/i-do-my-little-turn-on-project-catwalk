@@ -9,12 +9,12 @@ class OutfitList extends React.Component {
     }
   }
 
-  // methods
+  // TODO: methods to pull in customer's unique outfit data
 
   render () {
     return (
       <div>
-        {/* put carousel here with product card component */}
+        {/* TODO: put carousel here with product card component */}
       </div>
     )
   }

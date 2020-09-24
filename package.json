@@ -2,13 +2,15 @@
   "name": "maruchan-instant-duds",
   "version": "1.0.0",
   "description": "I Do My Little Turn on Project Catwalk (hereafter simply Project Catwalk) aims to revitalize an online apparel retail presence using front-end technologies in the JavaScript stack. Project Catwalk immediately features robust product detail pages, including images & descriptions, ratings & reviews, and related items & outfit-building components for an interactive and user-friendly shopping experience, while also optimizing for performance.",
-  "main": "index.js",
+  "main": "./server/index.js",
   "author": "Arielle Scherr, Rose Brame and Daniel Leal",
   "license": "",
   "engines": {
     "node": ">=6.13.0"
   },
   "scripts": {
+    "start": "react-scripts start",
+    "build": "webpack",
     "start-react": "webpack -d --watch",
     "start-server": "nodemon server/index.js",
     "test": "npm run test"
@@ -20,8 +22,9 @@
     "jquery": "^3.1.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
+    "react-scripts": "3.4.1",
     "mysql": "^2.18.1",
-    "jest": "jest"
+    "jest": "^26.4.2"
   },
   "devDependencies": {
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
@@ -30,6 +33,7 @@
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.23.0",
     "webpack": "^2.2.1",
+    "webpack-cli": "^3.3.12",
     "mocha": "*",
     "chai": "*"
   }
