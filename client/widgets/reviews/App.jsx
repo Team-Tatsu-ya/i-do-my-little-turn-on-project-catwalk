@@ -6,7 +6,7 @@ class Review extends Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      product = dummyData,
     }
 
     //binding of methods
@@ -24,6 +24,7 @@ class Review extends Component {
     return (
       <div>
        This is where the reviews are suppose to be
+       <ReviewList reviews={this.state.product}/>
       </div>
     )
   }
