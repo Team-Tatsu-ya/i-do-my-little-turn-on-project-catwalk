@@ -1,17 +1,21 @@
-import React from "react";
-import dummy from "./dummy_data.js";
+import React from 'react';
+import dummy from './dummy_data.js';
 
-var productCard = (props) => {
-  var product = dummy.dummyProduct;
+var ProductCard = (props) => {
+  var product = props.current;
 
   return (
     <div>
-      <b>{product.name}</b>
-      {product.category}
-      {product.default_price}
+      {/* <img src="{need to pull in image url from proper table in Products API}"/> */}
+      <h4>{product.name}</h4>
+      <p>{product.category.toUpperCase()}</p>
+      <p>${product.default_price}</p>
+      {/* need to pull in star rating here from Reviews API */}
     </div>
-  )
+  );
 };
+
+export default ProductCard;
 
 /* TODO:
  * render...
