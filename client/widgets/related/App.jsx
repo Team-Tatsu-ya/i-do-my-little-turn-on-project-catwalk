@@ -22,8 +22,9 @@ class RelatedApp extends React.Component {
   render () {
     return (
       <div>
-        <ProductCard />
+        {/* <ProductCard /> */}
         {/* TODO: add other components */}
+        <p>Hello world</p>
       </div>
     )
   }

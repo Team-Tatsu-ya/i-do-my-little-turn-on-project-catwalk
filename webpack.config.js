@@ -1,22 +1,44 @@
 const path = require('path');
 
 module.exports = {
-  entry: ['./client/widgets/related/index.js', './client/widgets/details/App.jsx', './client/widgets/reviews/index.js'],
+  entry: ['./client/widgets/related/index.js'],
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.jsx?$/,
-        loader: 'babel-loader',
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react']
+          }
+        },
         exclude: /node_modules/,
-        query: {
-          cacheDirectory: true,
-          presets: ['react', 'es2015']
-        }
       }
     ]
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist')
   },
 };
+
+
+// query: {
+//   cacheDirectory: true
+// }
+
+// module: {
+//   rules: [
+//     {
+//       test: /\.m?js$/,
+//       exclude: /(node_modules|bower_components)/,
+//       use: {
+//         loader: 'babel-loader',
+//         options: {
+//           presets: ['@babel/preset-env']
+//         }
+//       }
+//     }
+//   ]
+// }
+// Options
