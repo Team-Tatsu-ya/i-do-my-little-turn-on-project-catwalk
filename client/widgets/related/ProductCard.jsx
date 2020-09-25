@@ -6,7 +6,7 @@ var productCard = (props) => {
 
   return (
     <div>
-      <h8></h8>{product.name}
+      <b>{product.name}</b>
       {product.category}
       {product.default_price}
     </div>
