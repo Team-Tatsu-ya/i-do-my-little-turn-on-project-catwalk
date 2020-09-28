@@ -1,7 +1,7 @@
 import React from "react";
 
 class Comparison extends React.Component {
-  constructor() {
+  constructor(props) {
     super(props);
     this.state = {
       currentProduct: 0,

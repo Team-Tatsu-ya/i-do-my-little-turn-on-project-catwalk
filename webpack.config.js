@@ -1,22 +1,20 @@
 const path = require('path');
 
 module.exports = {
-  entry: ['./client/widgets/related/index.js', './client/widgets/details/App.jsx', './client/widgets/reviews/index.js'],
+  entry: './src/index.js',
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'public')
+  },
   module: {
-    loaders: [
+    rules: [
       {
-        test: /\.jsx?$/,
-        loader: 'babel-loader',
+        test: /.(js|jsx)$/,
         exclude: /node_modules/,
-        query: {
-          cacheDirectory: true,
-          presets: ['react', 'es2015']
+        use: {
+          loader: 'babel-loader'
         }
       }
     ]
-  },
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-  },
+  }
 };

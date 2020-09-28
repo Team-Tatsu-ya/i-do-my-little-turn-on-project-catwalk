@@ -1,20 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 // import components
-import Comparison from './Comparison.jsx';
-import OutfitList from './OutfitList.jsx';
-import ProductCard from './ProductCard.jsx';
-import RelatedList from './RelatedList.jsx';
+// import Comparison from './widgets/Comparison.jsx';
+// import OutfitList from './widgets/OutfitList.jsx';
+import ProductCard from './widgets/ProductCard.jsx';
+// import RelatedList from './widgets/RelatedList.jsx';
 // TODO: replace dummy data with a call to the Products API
-import dummy from './dummy_data.js';
+import dummy from './widgets/dummy_data.js';
 // import styles, etc.
 // import 'fontsource-roboto'; <--- may add back in later since its standard for MaterialUI
+// import OutlinedCard from './widgets/Comparison.jsx';
 
 class RelatedApp extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentProduct: dummy.productDummyList[0]
+      currentProduct: dummy.productDummyList[0],
+      productRating: dummy.dummyRatings.results[0].rating
     };
   }
 
@@ -25,7 +26,8 @@ class RelatedApp extends React.Component {
     return (
       <div>
         <p>RelatedApp is rendering</p>
-        <ProductCard current={this.state.currentProduct}/>
+        <ProductCard current={this.state.currentProduct} stars={this.state.productRating}/>
+        {/* <OutlinedCard /> */}
         {/* TODO: add other components */}
       </div>
     );
