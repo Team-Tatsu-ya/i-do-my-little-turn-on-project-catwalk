@@ -1,6 +1,6 @@
 import React from 'react';
 // import components
-// import Comparison from './widgets/Comparison.jsx';
+import Comparison from './widgets/Comparison.jsx';
 // import OutfitList from './widgets/OutfitList.jsx';
 import ProductCard from './widgets/ProductCard.jsx';
 // import RelatedList from './widgets/RelatedList.jsx';
@@ -8,7 +8,6 @@ import ProductCard from './widgets/ProductCard.jsx';
 import dummy from './widgets/dummy_data.js';
 // import styles, etc.
 // import 'fontsource-roboto'; <--- may add back in later since its standard for MaterialUI
-// import OutlinedCard from './widgets/Comparison.jsx';
 
 class RelatedApp extends React.Component {
   constructor(props) {
@@ -27,7 +26,10 @@ class RelatedApp extends React.Component {
       <div>
         <p>RelatedApp is rendering</p>
         <ProductCard current={this.state.currentProduct} stars={this.state.productRating}/>
-        {/* <OutlinedCard /> */}
+        <br></br>
+        <br></br>
+        <br></br>
+        <Comparison />
         {/* TODO: add other components */}
       </div>
     );

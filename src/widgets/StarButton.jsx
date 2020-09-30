@@ -12,15 +12,14 @@ const useStyles = makeStyles({
   }
 });
 
-export default function ActionButton(props) {
+export default function StarButton(props) {
   const classes = useStyles();
-  // var type = 'star' || 'x';
 
-  // TODO: an if statement that changes type between star and x depending on whether the product card is for related list or outfit list, each will also have their own icon and actions, can pull type from each list's state as prop
+  // TODO: add onClick functionality that opens comparison modal window
+  // onClick={() => { this.showModal(); }} ?
 
   return (
-    <IconButton aria-label="add to outfit" className={classes.starButton}>
-      <StarBorderRoundedIcon size="small"/>
-    </IconButton>
+    <StarBorderRoundedIcon size="small"/>
   );
 }
+
