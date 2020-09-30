@@ -1,6 +1,6 @@
 import React from 'react';
 // import components
-import Comparison from './widgets/Comparison.jsx';
+// import Comparison from './widgets/Comparison.jsx';
 // import OutfitList from './widgets/OutfitList.jsx';
 import ProductCard from './widgets/ProductCard.jsx';
 // import RelatedList from './widgets/RelatedList.jsx';
@@ -24,12 +24,12 @@ class RelatedApp extends React.Component {
   render () {
     return (
       <div>
-        <p>RelatedApp is rendering</p>
+        <p>Related Products, Outfit and Comparison</p>
         <ProductCard current={this.state.currentProduct} stars={this.state.productRating}/>
         <br></br>
         <br></br>
         <br></br>
-        <Comparison />
+        {/* <Comparison /> */}
         {/* TODO: add other components */}
       </div>
     );
